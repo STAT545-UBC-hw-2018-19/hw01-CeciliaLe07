@@ -21,9 +21,13 @@ iris
 
 **Note:** This repo could be useful :+1: for you if you are interested in exploit some [**Github flavored markdown features**](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
-<div style="text-align:center"><img src="https://media.giphy.com/media/26AHyxxCItIbFijLO/giphy.gif" width="300" height="150" /></div>
+<p align="center">
+<img src="https://media.giphy.com/media/26AHyxxCItIbFijLO/giphy.gif" width="300" height="150"/>
+</p>
 
-## <img src="https://avatars0.githubusercontent.com/u/42983288?s=400&u=44a35cf8d44373afbf49c535712683245b2d461a&v=4" width="140" height="140" /> Who I am? 
+## Who I am? 
+
+<img src="https://avatars0.githubusercontent.com/u/42983288?s=400&u=44a35cf8d44373afbf49c535712683245b2d461a&v=4" width="100" height="100"  align="right" />
 
 1. My name is **Cecilia León**, and I'm from **México**. I'm an a passionate of **Statistics** and this September I'm starting the Master program at [UBC](https://www.ubc.ca/).
 
