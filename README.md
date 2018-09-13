@@ -4,9 +4,9 @@
 
 I'm **Cecilia** and across this repo you can find all the files I used for doing my first assignment of [STAT545](http://stat545.com/).
 
-- On the **README.md** file you will find the *plain text* version of this file you are reading right now.
+- On the `README.md` file you will find the *plain text* version of this file you are reading right now.
 
-- The file **hw01_iris.md** contains an R Markdown document that explores the iris data frame in R. You can see it by typing the folowig line on your R console:
+- The file `hw01_iris.md` contains an R Markdown document that explores the iris data frame in R. You can see it by typing the folowig line on your R console:
 ```R
 iris
 ```
