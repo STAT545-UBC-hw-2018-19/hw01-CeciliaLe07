@@ -38,7 +38,7 @@ iris
 
 1. I'm a big fan of **R**.
 
-2. I love :coffee: but fur now I only can drink *decaf* :-1: 
+2. I love :coffee: but for now I only can drink *decaf* :-1: 
 
 3. I really like this quote:
 
@@ -46,7 +46,7 @@ iris
 >
 > Mahatma Gandhi. 
 
-4. Next September 16 all mexicans we are going to remember the **Independende of México**, so I want to share my top 5 of favorite Mexican food:
+4. Next September 16 all mexicans we are going to remember the **Independence of México**, so I want to share my top 5 of favorite Mexican food:
 
   |    **Mexican food**    | **Recipes**                                                                          |
   |------------------------|--------------------------------------------------------------------------------------|
