@@ -1,5 +1,4 @@
-# Welcome to my Assigment no.1 repository!
-
+# Welcome to the repository of my **Assigmen #1**!
 
 **Before starting:**
 
