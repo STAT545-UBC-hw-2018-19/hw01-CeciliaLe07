@@ -27,7 +27,7 @@ iris
 
 ## Who I am? 
 
-<img src="https://avatars0.githubusercontent.com/u/42983288?s=400&u=44a35cf8d44373afbf49c535712683245b2d461a&v=4" width="100" height="100"  align="right" />
+<img src="https://avatars0.githubusercontent.com/u/42983288?s=400&u=44a35cf8d44373afbf49c535712683245b2d461a&v=4" width="170" height="170"  align="right" />
 
 1. My name is **Cecilia León**, and I'm from **México**. I'm an a passionate of **Statistics** and this September I'm starting the Master program at [UBC](https://www.ubc.ca/).
 
