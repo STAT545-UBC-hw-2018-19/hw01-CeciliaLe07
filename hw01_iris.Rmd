@@ -26,7 +26,7 @@ iris
 
 As we could notice, is very uncomfortable and unhelpful to see the entire data frame. So, we can use some commands to visualize a part of the data frame. For example:
 
-1. The **head** command will return the first six rows in the data frame.
+1. The **head** command will return the first six rows of the data frame.
 
 ```{r}
 head(iris)
@@ -39,28 +39,28 @@ head(iris)
 head(iris,n=10)
 ```
 
-2. The **tail** command will return by dfault the last six rows of the data frame. Furthermore, in this command the parameter $n$ works in the same way as with the head command:
+2. The **tail** command will return by dfault the last six rows of the data frame. Furthermore, the parameter $n$ of this command works in the same way as with the head command:
 
 ```{r}
 #This line will return the last n = 8 rows in the data frame iris
 tail(iris,n=8)
 ```
 
-This first exploration allowed us to notice that this data frame has five different variables, which refers to: 
-
-**Hint**: See documentation by typyng `help(iris)` on the console to know more details about this data frame content.
+This first exploration allowed us to notice this data frame has five different variables, which refers to: 
 
 | No. | Variable's name | Description                                 |
 |-----|-----------------|---------------------------------------------|
 |  1  | Sepal.Length    | The length of flowers' sepal in centimeters |
 |  2  | Sepal.Width     | The width of flowers' sepal in centimeters  |
-|  3  | Petal.Length    | The length of flowers' petal in centimeters  |
+|  3  | Petal.Length    | The length of flowers' petal in centimeters |
 |  4  | Petal.Width     | The width of flowers' petal in centimeters  |
 |  5  | Species         | The flowers' specie                         |
 
-# What is the structure of the iris data frame?
+**Note**: See documentation by typyng `help(iris)` on the console to know more details about this data frame content.
 
-The command `str(iris)` can help us to know th structure of the data frame. This is, t know the number of observations and variables, the type of data which is saved in every variables, and its values or levels.
+#What is the structure of the iris data frame?
+
+The command `str(iris)` can help us to know the structure of data frame. This is, to know the number of observations and variables, the type of data which is saved in each variable, and also its values or levels.
 
 For instance, the structure of the data frame is the following:
 
@@ -69,7 +69,7 @@ str(iris)
 ```
 
 # Summary measurements
-As this is the first look to the date frame, it is useful to obtain certain statistical measuments such as the **mean**, **median**, **standar deviation**, etc.
+As this is the first look to the date frame, it is useful to obtain certain statistical measuments such as the **mean**, **median** and the **standar deviation**.
 
 ## Statistical functions
 
@@ -80,7 +80,7 @@ mean(iris$Petal.Length)
 median(iris$Petal.Length)
 sd(iris$Petal.Length)
 ```
-which returnd the results:
+which return the results:
 
 ```{r,echo=FALSE}
 mean(iris$Petal.Length)
@@ -88,29 +88,28 @@ median(iris$Petal.Length)
 sd(iris$Petal.Length)
 ```
 
-That means the petal length's mean of the flowers, which is calculated by the following formula
+that means the petal length's mean of the flowers, which is calculated by the formula:
 
 $$\frac{1}{150} \sum{Petal.Length}$$
-will be equal to $3.758$. Moreover, the median of will be $4.35$ and the standard deviation to $1.765$.
+will be equal to $3.758$. Moreover, the median will be equal to $4.35$ and the standard deviation to $1.765$.
 
 ## Summary function
 
-It is possible to calculate other statistical measurements in all data frame by using the **summary** function:
+It is possible to calculate other statistical measurements of all variables on the data frame by using the **summary** function:
 
 ```{r}
 summary(iris)
 ```
 
-## Some descriptive plots
+##Some descriptive plots
 
 In order to visualize the behaviour of the numeric variables on data set, we can generate the following graph:
-
 
 ```{r,echo=FALSE}
 plot(iris[,1:4],col=topo.colors(150))
 ```
 
-Finally, we can visualize the counts of our categorical variable by:
+Finally, we can visualize the counts of the categorical variable by:
 ```{r,echo=FALSE}
 b<-barplot(table(iris$Species),col="skyblue",border="white",ylim=c(0,60))
 text(b, table(iris$Species), labels = table(iris$Species), pos =3)

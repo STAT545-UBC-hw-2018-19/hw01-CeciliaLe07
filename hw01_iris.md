@@ -8,16 +8,16 @@ output:
         keep_md: true
 ---
 
-# Overview of data.
+#Familiarizing with the data frame
 
-## See the entire data frame
-As the data set *iris* belongs to the **datasets** packages, which is on of the default packages on R, to see its data is just necessary type next line on the console: 
+##See the entire data frame
+
+As the data set *iris* belongs to the `datasets` package, which is one of the default packages on R, the only thing we should do to see its data is typing the next line on console: 
 ```R
 iris
 ```
 
 The result looks like this:
-
 
 ```
 ##     Sepal.Length Sepal.Width Petal.Length Petal.Width    Species
@@ -173,11 +173,11 @@ The result looks like this:
 ## 150          5.9         3.0          5.1         1.8  virginica
 ```
 
-## The head and tail commands
+##The head and tail commands
 
-As we could notice, is very uncomfortable and little useful to see the entire data frame. So, we can use some commands to see a part of the data frame. For example:
+As we could notice, is very uncomfortable and unhelpful to see the entire data frame. So, we can use some commands to visualize a part of the data frame. For example:
 
-1. The **head** command will return the first six rows in the data frame.
+1. The **head** command will return the first six rows of the data frame.
 
 
 ```r
@@ -216,7 +216,7 @@ head(iris,n=10)
 ## 10          4.9         3.1          1.5         0.1  setosa
 ```
 
-2. The **tail** command will return by dfault the last six rown in the data set. Furthermore, in this command the parameter $n$ works in the same way as with the head command:
+2. The **tail** command will return by dfault the last six rows of the data frame. Furthermore, the parameter $n$ of this command works in the same way as with the head command:
 
 
 ```r
@@ -236,21 +236,21 @@ tail(iris,n=8)
 ## 150          5.9         3.0          5.1         1.8 virginica
 ```
 
-This first exploration of data frame allowed us to notice that tis data frame has five differente variables, which refers to: 
-
-**Hint**: See documentation by typyng `help(iris)`.
+This first exploration allowed us to notice this data frame has five different variables, which refers to: 
 
 | No. | Variable's name | Description                                 |
 |-----|-----------------|---------------------------------------------|
 |  1  | Sepal.Length    | The length of flowers' sepal in centimeters |
 |  2  | Sepal.Width     | The width of flowers' sepal in centimeters  |
-|  3  | Petal.Length    | The length of flowers' petal in centimeters  |
+|  3  | Petal.Length    | The length of flowers' petal in centimeters |
 |  4  | Petal.Width     | The width of flowers' petal in centimeters  |
 |  5  | Species         | The flowers' specie                         |
 
-# What is the structure of the iris data frame?
+**Note**: See documentation by typyng `help(iris)` on the console to know more details about this data frame content.
 
-The command `str(iris)` can help us to know th structure of the data frame. This is, t know the number of observations and variables, the type of data which is saved in every variables, and its values or levels.
+#What is the structure of the iris data frame?
+
+The command `str(iris)` can help us to know the structure of data frame. This is, to know the number of observations and variables, the type of data which is saved in each variable, and also its values or levels.
 
 For instance, the structure of the data frame is the following:
 
@@ -265,7 +265,7 @@ For instance, the structure of the data frame is the following:
 ```
 
 # Summary measurements
-As this is the first look to the date frame, it is useful to obtain certain statistical measuments such as the **mean**, **median**, **standar deviation**, etc.
+As this is the first look to the date frame, it is useful to obtain certain statistical measuments such as the **mean**, **median** and the **standar deviation**.
 
 ## Statistical functions
 
@@ -276,7 +276,7 @@ mean(iris$Petal.Length)
 median(iris$Petal.Length)
 sd(iris$Petal.Length)
 ```
-which returnd the results:
+which return the results:
 
 
 ```
@@ -291,14 +291,14 @@ which returnd the results:
 ## [1] 1.765298
 ```
 
-That means the petal length's mean of the flowers, which is calculated by the following formula
+that means the petal length's mean of the flowers, which is calculated by the formula:
 
 $$\frac{1}{150} \sum{Petal.Length}$$
-will be equal to $3.758$. Moreover, the median of will be $4.35$ and the standard deviation to $1.765$.
+will be equal to $3.758$. Moreover, the median will be equal to $4.35$ and the standard deviation to $1.765$.
 
 ## Summary function
 
-It is possible to calculate other statistical measurements in all data frame by using the **summary** function:
+It is possible to calculate other statistical measurements of all variables on the data frame by using the **summary** function:
 
 
 ```r
@@ -322,14 +322,13 @@ summary(iris)
 ## 
 ```
 
-## Some descriptive plots
+##Some descriptive plots
 
 In order to visualize the behaviour of the numeric variables on data set, we can generate the following graph:
 
-
 ![](hw01_iris_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
-Finally, we can visualize the counts of our categorical variable by:
+Finally, we can visualize the counts of the categorical variable *species* by:
 ![](hw01_iris_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 
