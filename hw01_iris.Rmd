@@ -8,23 +8,23 @@ output:
         keep_md: true
 ---
 
-# Overview of data.
+#Familiarizing with the data frame
 
-## See the entire data frame
-As the data set *iris* belongs to the **datasets** packages, which is on of the default packages on R, to see its data is just necessary type next line on the console: 
+##See the entire data frame
+
+As the data set *iris* belongs to the `datasets` package, which is one of the default packages on R, the only thing we should do to see its data is typing the next line on console: 
 ```R
 iris
 ```
 
 The result looks like this:
-
 ```{r, echo=FALSE}
 iris
 ```
 
-## The head and tail commands
+##The head and tail commands
 
-As we could notice, is very uncomfortable and little useful to see the entire data frame. So, we can use some commands to see a part of the data frame. For example:
+As we could notice, is very uncomfortable and unhelpful to see the entire data frame. So, we can use some commands to visualize a part of the data frame. For example:
 
 1. The **head** command will return the first six rows in the data frame.
 
@@ -39,16 +39,16 @@ head(iris)
 head(iris,n=10)
 ```
 
-2. The **tail** command will return by dfault the last six rown in the data set. Furthermore, in this command the parameter $n$ works in the same way as with the head command:
+2. The **tail** command will return by dfault the last six rows of the data frame. Furthermore, in this command the parameter $n$ works in the same way as with the head command:
 
 ```{r}
 #This line will return the last n = 8 rows in the data frame iris
 tail(iris,n=8)
 ```
 
-This first exploration of data frame allowed us to notice that tis data frame has five differente variables, which refers to: 
+This first exploration allowed us to notice that this data frame has five different variables, which refers to: 
 
-**Hint**: See documentation by typyng `help(iris)`.
+**Hint**: See documentation by typyng `help(iris)` on the console to know more details about this data frame content.
 
 | No. | Variable's name | Description                                 |
 |-----|-----------------|---------------------------------------------|
